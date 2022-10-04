@@ -15,12 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
+ * Lib file
  * @package   assignfeedback_misconduct
  * @copyright 2017 Southampton Solent University
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
- 
- defined('MOODLE_INTERNAL') || die();
 
 /**
  * Provides misconduct field for grading.
@@ -30,30 +29,29 @@
  * @param context $context
  * @param array $args
  */
- function assignfeedback_misconduct_pluginfile($course,                                                                                    
-                                        $cm,                                                                                        
-                                        context $context,                                                                                  
-                                        $args) {                                                                           
-    global $USER, $DB;                                                                                                              
-                                                                                                                                    
-    if ($context->contextlevel != CONTEXT_MODULE) {                                                                                 
-        return false;                                                                                                               
-    }                                                                                                                               
-                                                                                                                                    
-    require_login($course, false, $cm);                                                                                             
-    $itemid = (int)array_shift($args);                                                                                                                         
-    $userid = $record->userid;                                                                                                      
-                                                                                                                                    
-    if (!$assign = $DB->get_record('assign', array('id'=>$cm->instance))) {                                                         
-        return false;                                                                                                               
-    }                                                                                                                               
-                                                                                                                                    
-    if ($assign->id != $record->assignment) {                                                                                       
-        return false;                                                                                                               
-    }                                                                                                                               
-                                                                                                                                    
-    // Check is users feedback or has grading permission.                                                                           
-    if ($USER->id != $userid and !has_capability('mod/assign:grade', $context)) {                                                   
-        return false;                                                                                                               
-    }                                                                                     
+function assignfeedback_misconduct_pluginfile($course,
+                                        $cm,
+                                        context $context,
+                                        $args) {
+    global $USER, $DB;
+
+    if ($context->contextlevel != CONTEXT_MODULE) {
+        return false;
+    }
+    require_login($course, false, $cm);
+    $itemid = (int)array_shift($args);
+    $userid = $record->userid;
+
+    if (!$assign = $DB->get_record('assign', array('id' => $cm->instance))) {
+        return false;
+    }
+
+    if ($assign->id != $record->assignment) {
+        return false;
+    }
+
+    // Check is users feedback or has grading permission.
+    if ($USER->id != $userid && !has_capability('mod/assign:grade', $context)) {
+        return false;
+    }
 }
