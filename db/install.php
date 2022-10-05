@@ -23,10 +23,10 @@
  */
 
 /**
-  * Install function for misconduct
-  *
-  * @return boolean Always true.
-  */
+ * Install function for misconduct
+ *
+ * @return boolean Always true.
+ */
 function xmldb_assignfeedback_misconduct_install() {
     global $CFG;
     require_once($CFG->dirroot . '/mod/assign/adminlib.php');
