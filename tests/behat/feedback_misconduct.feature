@@ -1,4 +1,4 @@
-@mod @mod_assign @assignfeedback @assignfeedback_misconduct
+@mod @mod_assign @assignfeedback @assignfeedback_misconduct @sol @solassignfeedback
 Feature: In an assignment, teachers can mark a submission for misconduct
   In order to identify misconduct submissions,
   As a teacher

@@ -22,10 +22,17 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Academic misconduct';
 $string['check_label'] = 'Referred for academic misconduct';
+
 $string['default'] = 'Default';
 $string['default_help'] = 'Default help';
-$string['misconduct'] = 'Academic misconduct';
+
 $string['enabled'] = 'Academic misconduct';
-$string['enabled_help'] = '<p>Set a flag to show where academic misconducted is being investigated. This will not be shown to students.</p><p>Where academic misconduct is suspected, please see the <a href="http://portal.solent.ac.uk/support/official-documents/information-for-students/complaints-conduct/academic-misconduct-info-staff/academic-misconduct-information-for-staff.aspx" target="_blank">guidance on the Portal</a> or email <a href="mailto:academic.misconduct@solent.ac.uk">academic.misconduct@solent.ac.uk</a>, ext:6586</p>';
+$string['enabled_help'] = '<p>Set a flag to show where academic misconducted is being investigated. This will not be shown to students.</p>' .
+    '<p>Where academic misconduct is suspected, please see the ' .
+    '<a href="http://portal.solent.ac.uk/support/official-documents/information-for-students/complaints-conduct/academic-misconduct-info-staff/academic-misconduct-information-for-staff.aspx" target="_blank">guidance on the Portal</a>' .
+    ' or email <a href="mailto:academic.misconduct@solent.ac.uk">academic.misconduct@solent.ac.uk</a>, ext:6586</p>';
+
+$string['misconduct'] = 'Academic misconduct';
+
+$string['pluginname'] = 'Academic misconduct';
