@@ -43,7 +43,7 @@ class assign_feedback_misconduct extends assign_feedback_plugin {
      */
     public function get_misconduct($gradeid) {
         global $DB;
-        return $DB->get_record('assignfeedback_misconduct', array('grade' => $gradeid));
+        return $DB->get_record('assignfeedback_misconduct', ['grade' => $gradeid]);
     }
 
     /**
