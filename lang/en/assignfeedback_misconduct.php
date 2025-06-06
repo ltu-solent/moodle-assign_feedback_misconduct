@@ -30,8 +30,8 @@ $string['default_help'] = 'Default help';
 $string['enabled'] = 'Academic misconduct';
 $string['enabled_help'] = '<p>Set a flag to show where academic misconducted is being investigated. This will not be shown to students.</p>' .
     '<p>Where academic misconduct is suspected, please see the ' .
-    '<a href="http://portal.solent.ac.uk/support/official-documents/information-for-students/complaints-conduct/academic-misconduct-info-staff/academic-misconduct-information-for-staff.aspx" target="_blank">guidance on the Portal</a>' .
-    ' or email <a href="mailto:academic.misconduct@solent.ac.uk">academic.misconduct@solent.ac.uk</a>, ext:6586</p>';
+    '<a href="/academic-misconduct" target="_blank">guidance on the Staff Portal</a>' .
+    ' or email <a href="mailto:academic.misconduct@solent.ac.uk">academic.misconduct@solent.ac.uk</a></p>';
 
 $string['misconduct'] = 'Academic misconduct';
 
