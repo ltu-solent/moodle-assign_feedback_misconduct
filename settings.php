@@ -23,7 +23,11 @@
  */
 defined('MOODLE_INTERNAL') || die();
 
-$settings->add(new admin_setting_configcheckbox('assignfeedback_misconduct/default',
-                   new lang_string('default', 'assignfeedback_misconduct'),
-                   new lang_string('default_help', 'assignfeedback_misconduct'), 0));
-
+$settings->add(
+    new admin_setting_configcheckbox(
+        'assignfeedback_misconduct/default',
+        new lang_string('default', 'assignfeedback_misconduct'),
+        new lang_string('default_help', 'assignfeedback_misconduct'),
+        0
+    )
+);

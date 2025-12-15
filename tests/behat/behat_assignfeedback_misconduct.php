@@ -31,7 +31,6 @@ require_once(__DIR__ . '/../../../../../../lib/behat/behat_base.php');
  * Behat Misconduct feedback steps
  */
 class behat_assignfeedback_misconduct extends behat_base {
-
     /**
      * Convert page names to URLs for steps like 'When I am on the "[identifier]" "[page type]" page'.
      *
@@ -67,6 +66,3 @@ class behat_assignfeedback_misconduct extends behat_base {
         return get_coursemodule_from_instance('assign', $assign->id, $assign->course);
     }
 }
-
-
-

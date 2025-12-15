@@ -25,7 +25,6 @@
  * Misconduct feedback class
  */
 class assign_feedback_misconduct extends assign_feedback_plugin {
-
     /**
      * Returns plugin name
      *
@@ -67,7 +66,6 @@ class assign_feedback_misconduct extends assign_feedback_plugin {
             } else {
                 $mform->addElement('checkbox', 'misconduct_check', get_string('check_label', 'assignfeedback_misconduct'));
             }
-
         } else {
             $mform->addElement('checkbox', 'misconduct_check', get_string('check_label', 'assignfeedback_misconduct'));
         }
@@ -129,7 +127,7 @@ class assign_feedback_misconduct extends assign_feedback_plugin {
      * @param bool $showviewlink Set to true to show a link to view the full feedback
      * @return string
      */
-    public function view_summary(stdClass $grade, & $showviewlink) {
+    public function view_summary(stdClass $grade, &$showviewlink) {
         $misconduct = $this->get_misconduct($grade->id);
         if ($misconduct) {
             if ($misconduct->misconduct == 1) {
